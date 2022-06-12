@@ -3,8 +3,8 @@ package com.javajira.task;
 import com.javajira.enums.ETaskStatus;
 
 public class Task {
-  public String title;
-  public String description;
+  private String title;
+  private String description;
   ETaskStatus status;
 
   public Task(String title, String description) {
@@ -13,7 +13,15 @@ public class Task {
     status = ETaskStatus.NEW;
   }
 
-  void changeStatus(ETaskStatus status) {
+  public void changeStatus(ETaskStatus status) {
     this.status = status;
+  }
+
+  public String getTitle() {
+    return title;
+  }
+
+  public String getDescription() {
+    return description;
   }
 }

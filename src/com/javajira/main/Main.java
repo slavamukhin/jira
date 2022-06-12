@@ -13,6 +13,6 @@ public class Main {
 
     project.createTask("DO something", "DO something");
     List<Task> allTasks = project.getAllTasks();
-    System.out.println("title: " + allTasks.get(0).title + " desc: " + allTasks.get(0).description);
+    System.out.println("title: " + allTasks.get(0).getTitle() + " desc: " + allTasks.get(0).getDescription());
   }
 }
